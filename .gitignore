@@ -37,3 +37,7 @@ Screenshot *.png
 # Agent workflows and memory
 workflows/
 CLAUDE.md
+
+# Oversized videos (>100MB, can't go in regular git)
+assets/projects/institute-project/video-drone.mp4
+assets/projects/tiered-retaining-wall/video-drone.mp4
