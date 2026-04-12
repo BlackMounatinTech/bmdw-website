@@ -193,6 +193,16 @@ img, svg {
   }
 }
 
+/* --- Eliminate sub-pixel gaps between same-color sections --- */
+.story-section-dark,
+.video-section,
+.stats-section,
+.urgency-banner,
+.cta-banner {
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+}
+
 /* --- Fade-in Animations --- */
 .fade-in {
   opacity: 0;
@@ -1589,6 +1599,20 @@ footer {
 
   .hero h1 { font-size: 4rem; }
   .hero { padding: 12rem 0 7rem; }
+
+  /* Show horizontal nav on desktop */
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    border-bottom: none;
+    padding: 0;
+    gap: 0;
+  }
 
   .nav-links a {
     padding: 0.5rem 1rem;
