@@ -1,0 +1,39 @@
+# Secrets
+.env
+credentials.json
+token.json
+
+# Temporary files
+.tmp/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Source photo/video folders (not part of the website)
+B Roll Footage/
+BackYard Land Clearing /
+Driveway add on/
+Emergency Appartment Sewer Excavation/
+Exposed Aggregate Driveway add on/
+Gravel Driveway extension/
+Institute Project /
+Land Clearing /
+Natural Boulder Retaining wall/
+Raised Block Garden Beds/
+Retaining Wall/
+side yard makeover /
+tiered retaining wall/
+winding concrete pathway /
+
+# Screenshots
+Screenshot *.png
+
+# Agent workflows and memory
+workflows/
+CLAUDE.md
