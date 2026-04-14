@@ -521,8 +521,11 @@ header.scrolled {
   -webkit-text-stroke: 4px #1d1d1f;
   paint-order: stroke fill;
   text-shadow: 0 4px 24px rgba(0,0,0,0.6);
-  font-size: 2.8rem;
-  margin-bottom: 1.25rem;
+  font-size: 2rem;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  max-width: 340px;
+  margin: 0 auto 1.25rem;
 }
 
 .hero-photo p {
@@ -591,7 +594,8 @@ header.scrolled {
     min-height: 85vh;
   }
   .hero-photo h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
+    max-width: 720px;
   }
   .hero-photo p {
     font-size: 1.2rem;
