@@ -484,9 +484,9 @@ header.scrolled {
 /* Hero with photo background */
 .hero-photo {
   position: relative;
-  background-image: url('../assets/projects/retaining-wall/05.jpg');
+  background-image: url('../assets/projects/natural-boulder-wall/03.jpg');
   background-size: cover;
-  background-position: center center;
+  background-position: 60% center;
   padding: 14rem 0 8rem;
   min-height: 85vh;
   display: flex;
@@ -498,7 +498,7 @@ header.scrolled {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(29,29,31,0.3) 0%, rgba(29,29,31,0.65) 100%);
+  background: linear-gradient(180deg, rgba(29,29,31,0.15) 0%, rgba(29,29,31,0.4) 100%);
   z-index: 1;
 }
 
@@ -513,14 +513,10 @@ header.scrolled {
   max-width: 360px;
   margin: 0 auto 1.75rem;
   filter: brightness(0) invert(1)
-    drop-shadow(4px 0 0 #1d1d1f)
-    drop-shadow(-4px 0 0 #1d1d1f)
-    drop-shadow(0 4px 0 #1d1d1f)
-    drop-shadow(0 -4px 0 #1d1d1f)
-    drop-shadow(3px 3px 0 #1d1d1f)
-    drop-shadow(-3px 3px 0 #1d1d1f)
-    drop-shadow(3px -3px 0 #1d1d1f)
-    drop-shadow(-3px -3px 0 #1d1d1f);
+    drop-shadow(1px 0 0 #1d1d1f)
+    drop-shadow(-1px 0 0 #1d1d1f)
+    drop-shadow(0 1px 0 #1d1d1f)
+    drop-shadow(0 -1px 0 #1d1d1f);
 }
 
 .hero-photo h1 {
