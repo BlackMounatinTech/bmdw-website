@@ -1565,6 +1565,34 @@ header.scrolled {
   margin: 0 auto;
 }
 
+/* --- Service Area Map --- */
+.service-map-wrap {
+  max-width: 400px;
+  margin: 2rem auto 0;
+  padding: 1rem;
+}
+
+.service-map {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-map .map-label {
+  font-family: var(--font-body);
+  font-size: 13px;
+  fill: var(--charcoal);
+  font-weight: 500;
+}
+
+.service-map .map-caption {
+  font-family: var(--font-body);
+  font-size: 11px;
+  fill: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 /* --- Video Section --- */
 .video-section {
   padding: 5rem 0;

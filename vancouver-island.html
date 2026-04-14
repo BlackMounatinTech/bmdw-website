@@ -128,22 +128,70 @@
     </div>
   </section>
 
-  <!-- Areas We Serve -->
+  <!-- Areas We Serve with Map -->
   <section class="minimal-section bg-off">
     <div class="container" style="text-align:center;">
-      <span class="section-label">Areas We Serve</span>
-      <h2>Serving communities across the island.</h2>
-      <p class="section-intro" style="margin-bottom:2rem;">Click your area to learn more about the services we offer in your community.</p>
-      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; max-width:700px; margin:0 auto;">
-        <a href="excavation-nanaimo.html" class="btn btn-outline">Nanaimo</a>
+      <span class="section-label">Service Area</span>
+      <h2>From Duncan to Campbell River.</h2>
+      <p class="section-intro" style="margin-bottom:2rem;">We work across Vancouver Island, with most of our projects falling somewhere along the east coast corridor. Click any community to learn more.</p>
+
+      <div class="service-map-wrap">
+        <svg class="service-map" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg" aria-label="Vancouver Island service area map">
+          <!-- Simplified Vancouver Island outline -->
+          <path d="M 100 50 Q 130 40 160 55 L 200 80 Q 230 110 240 150 L 260 200 Q 275 250 280 300 L 285 360 Q 270 410 240 450 L 200 490 Q 160 520 120 540 L 90 550 Q 70 540 60 510 L 50 450 Q 60 400 75 350 L 85 280 Q 90 210 95 150 Q 95 90 100 50 Z"
+            fill="#e8f0ea" stroke="#2d5a3d" stroke-width="2"/>
+
+          <!-- City markers (positioned roughly by geography) -->
+          <!-- Campbell River (north) -->
+          <circle cx="200" cy="135" r="6" fill="#2d5a3d"/>
+          <text x="215" y="140" class="map-label">Campbell River</text>
+
+          <!-- Courtenay -->
+          <circle cx="195" cy="200" r="6" fill="#2d5a3d"/>
+          <text x="210" y="205" class="map-label">Courtenay</text>
+
+          <!-- Comox -->
+          <circle cx="210" cy="215" r="6" fill="#2d5a3d"/>
+          <text x="225" y="220" class="map-label">Comox</text>
+
+          <!-- Cumberland -->
+          <circle cx="180" cy="215" r="5" fill="#2d5a3d"/>
+          <text x="100" y="220" class="map-label" text-anchor="end">Cumberland</text>
+
+          <!-- Qualicum Beach -->
+          <circle cx="175" cy="290" r="5" fill="#2d5a3d"/>
+          <text x="80" y="295" class="map-label" text-anchor="end">Qualicum Beach</text>
+
+          <!-- Parksville -->
+          <circle cx="180" cy="315" r="5" fill="#2d5a3d"/>
+          <text x="195" y="320" class="map-label">Parksville</text>
+
+          <!-- Nanaimo -->
+          <circle cx="175" cy="380" r="7" fill="#2d5a3d"/>
+          <text x="190" y="385" class="map-label" style="font-weight:700;">Nanaimo</text>
+
+          <!-- Ladysmith -->
+          <circle cx="160" cy="430" r="5" fill="#2d5a3d"/>
+          <text x="175" y="435" class="map-label">Ladysmith</text>
+
+          <!-- Duncan -->
+          <circle cx="145" cy="475" r="5" fill="#2d5a3d"/>
+          <text x="160" y="480" class="map-label">Duncan</text>
+
+          <text x="200" y="570" class="map-caption" text-anchor="middle">Vancouver Island, BC</text>
+        </svg>
+      </div>
+
+      <div style="display:flex; flex-wrap:wrap; gap:0.75rem; justify-content:center; max-width:700px; margin:2.5rem auto 0;">
+        <a href="excavation-campbell-river.html" class="btn btn-outline">Campbell River</a>
         <a href="excavation-courtenay.html" class="btn btn-outline">Courtenay</a>
         <a href="excavation-comox.html" class="btn btn-outline">Comox</a>
-        <a href="excavation-campbell-river.html" class="btn btn-outline">Campbell River</a>
         <a href="excavation-cumberland.html" class="btn btn-outline">Cumberland</a>
-        <a href="excavation-parksville.html" class="btn btn-outline">Parksville</a>
         <a href="excavation-qualicum-beach.html" class="btn btn-outline">Qualicum Beach</a>
-        <a href="excavation-duncan.html" class="btn btn-outline">Duncan</a>
+        <a href="excavation-parksville.html" class="btn btn-outline">Parksville</a>
+        <a href="excavation-nanaimo.html" class="btn btn-outline">Nanaimo</a>
         <a href="excavation-ladysmith.html" class="btn btn-outline">Ladysmith</a>
+        <a href="excavation-duncan.html" class="btn btn-outline">Duncan</a>
       </div>
     </div>
   </section>
