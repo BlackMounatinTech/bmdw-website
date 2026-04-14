@@ -487,8 +487,9 @@ header.scrolled {
   background-image: url('../assets/projects/natural-boulder-wall/03.jpg');
   background-size: cover;
   background-position: 75% center;
-  padding: 14rem 0 8rem;
-  min-height: 85vh;
+  background-color: #1d1d1f;
+  padding: 10rem 0 5rem;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -579,6 +580,10 @@ header.scrolled {
 }
 
 @media (min-width: 768px) {
+  .hero-photo {
+    padding: 14rem 0 8rem;
+    min-height: 85vh;
+  }
   .hero-photo h1 {
     font-size: 4rem;
   }
