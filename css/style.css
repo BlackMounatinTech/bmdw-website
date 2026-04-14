@@ -504,7 +504,7 @@ header.scrolled {
 
 .hero-photo .hero-logo {
   max-width: 200px;
-  margin: 6rem auto 2rem;
+  margin: 3.5rem auto 2rem;
   filter: brightness(0) invert(1)
     drop-shadow(2px 0 0 #1d1d1f)
     drop-shadow(-2px 0 0 #1d1d1f)
