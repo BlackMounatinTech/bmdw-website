@@ -481,7 +481,76 @@ header.scrolled {
   margin: 0 0.5rem 0.75rem;
 }
 
-/* Hero with image variant */
+/* Hero with photo background */
+.hero-photo {
+  position: relative;
+  background-image: url('../assets/projects/natural-boulder-wall/08.jpg');
+  background-size: cover;
+  background-position: center center;
+  padding: 14rem 0 8rem;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-photo::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(29,29,31,0.3) 0%, rgba(29,29,31,0.65) 100%);
+  z-index: 1;
+}
+
+.hero-photo .container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-photo .hero-logo {
+  max-width: 180px;
+  margin: 0 auto 1.75rem;
+  filter: brightness(0) invert(1);
+}
+
+.hero-photo h1 {
+  color: var(--white);
+  text-shadow: 0 2px 20px rgba(0,0,0,0.4);
+  font-size: 2.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.hero-photo p {
+  color: rgba(255,255,255,0.95);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.hero-photo .btn-primary {
+  background: var(--white);
+  color: var(--black);
+}
+
+.hero-photo .btn-primary:hover {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.hero-photo .btn-outline {
+  color: var(--white);
+  border-color: var(--white);
+}
+
+.hero-photo .btn-outline:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+/* Legacy white hero variant — kept for other pages */
 .hero-image {
   background: var(--white);
   padding: 10rem 0 2rem;
@@ -503,6 +572,18 @@ header.scrolled {
 .hero-image .btn-outline:hover {
   background: var(--black);
   color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .hero-photo h1 {
+    font-size: 4rem;
+  }
+  .hero-photo p {
+    font-size: 1.2rem;
+  }
+  .hero-photo .hero-logo {
+    max-width: 220px;
+  }
 }
 
 /* Hero with full-bleed video background */
