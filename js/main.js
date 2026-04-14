@@ -50,7 +50,10 @@
 
       fetch(form.action, {
         method: 'POST',
-        body: data
+        body: data,
+        headers: {
+          'Accept': 'application/json'
+        }
       }).then(function (response) {
         if (response.ok) {
           btn.textContent = 'Sent!';
