@@ -527,10 +527,16 @@ header.scrolled {
 
 .hero-photo p {
   color: var(--white);
-  -webkit-text-stroke: 2px #1d1d1f;
+  -webkit-text-stroke: 3px #1d1d1f;
   paint-order: stroke fill;
-  text-shadow: 0 2px 16px rgba(0,0,0,0.5);
+  text-shadow:
+    -1.5px -1.5px 0 #1d1d1f,
+     1.5px -1.5px 0 #1d1d1f,
+    -1.5px  1.5px 0 #1d1d1f,
+     1.5px  1.5px 0 #1d1d1f,
+     0 3px 20px rgba(0,0,0,0.8);
   font-size: 1.1rem;
+  font-weight: 500;
   max-width: 600px;
   margin: 0 auto 2.5rem;
 }
