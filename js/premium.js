@@ -22,7 +22,22 @@
     });
   }
 
-  /* ---------------- Hero video: fade in only when ready ---------------- */
+  /* ---------------- Robust video autoplay (works on iOS / mobile Safari) ----------------
+     iOS only autoplays a video that is muted + playsinline AND gets an explicit play()
+     call. It also refuses if the muted attr isn't truly applied, so we force it in JS.
+     Offscreen videos are started when they scroll into view via IntersectionObserver. */
+  var allVideos = [].slice.call(document.querySelectorAll('video'));
+  function tryPlay(v) {
+    v.muted = true;                 // iOS: must be muted to autoplay
+    v.setAttribute('muted', '');
+    var p = v.play && v.play();
+    if (p && p.catch) p.catch(function () {
+      // Autoplay was blocked; retry once the video can actually play
+      v.addEventListener('canplay', function () {
+        var p2 = v.play && v.play(); if (p2 && p2.catch) p2.catch(function () {});
+      }, { once: true });
+    });
+  }
   var heroVideo = document.querySelector('.hero-video');
   if (heroVideo) {
     var showVideo = function () { heroVideo.classList.add('is-ready'); };
@@ -31,10 +46,27 @@
       heroVideo.addEventListener('canplay', showVideo, { once: true });
       heroVideo.addEventListener('loadeddata', showVideo, { once: true });
     }
-    // Nudge autoplay (some browsers need an explicit play call)
-    var p = heroVideo.play && heroVideo.play();
-    if (p && p.catch) p.catch(function () {});
   }
+  // Play every video immediately (muted autoplay is allowed offscreen), then
+  // re-play each one when it scrolls into view — so none ever shows a play button.
+  allVideos.forEach(function (v) { tryPlay(v); });
+
+  if ('IntersectionObserver' in window) {
+    var vidObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting && e.target.paused) { tryPlay(e.target); }
+      });
+    }, { threshold: 0.01 });
+    allVideos.forEach(function (v) { vidObserver.observe(v); });
+  }
+
+  // Safety net: on first user interaction, nudge any still-paused video.
+  var kickAll = function () {
+    allVideos.forEach(function (v) { if (v.paused) { var p = v.play && v.play(); if (p && p.catch) p.catch(function () {}); } });
+  };
+  window.addEventListener('touchstart', kickAll, { passive: true });
+  window.addEventListener('scroll', kickAll, { passive: true });
+  window.addEventListener('click', kickAll);
 
   /* ---------------- Header scroll state ---------------- */
   var header = document.querySelector('header');
