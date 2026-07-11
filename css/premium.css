@@ -270,8 +270,8 @@ header.scrolled {
   box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 .hero-badge::before { background: var(--moss); }
-.hero h1 { margin-bottom: 2.4rem; max-width: 15ch; }
-.hero .lead { margin-bottom: 3rem; color: rgba(244,244,242,0.92); max-width: 52ch; }
+.hero h1 { margin-bottom: 3.2rem; max-width: 15ch; }
+.hero .lead { margin-bottom: 3.8rem; color: rgba(244,244,242,0.92); max-width: 52ch; }
 .hero-lead {
   display: inline-block;
   background: rgba(5,6,5,0.42);
@@ -293,7 +293,7 @@ header.scrolled {
 /* Trust strip under hero */
 .trust-strip {
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center;
-  margin-top: 3.2rem; padding-top: 2.4rem; margin-left: 3.5rem; border-top: 1px solid rgba(255,255,255,0.14);
+  margin-top: 4rem; padding-top: 2.8rem; margin-left: 3.5rem; border-top: 1px solid rgba(255,255,255,0.14);
 }
 .trust-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: rgba(244,244,242,0.85); font-weight: 500; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
 .trust-item svg { width: 18px; height: 18px; color: var(--moss); flex: 0 0 auto; }
