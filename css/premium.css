@@ -633,7 +633,13 @@ body.interior { padding-top: 0; }
 .pcard:hover::after { opacity: 1; }
 .pcard-body { position: absolute; left: 0; right: 0; bottom: 0; padding: 1.6rem 1.5rem; z-index: 2; transform: translateY(6px); transition: transform 0.5s var(--ease); }
 .pcard:hover .pcard-body { transform: translateY(0); }
-.pcard-body .tag { font-family: var(--font-mono); font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--moss); margin-bottom: 0.5rem; display: block; }
+.pcard-body .tag {
+  font-family: var(--font-mono); font-size: 0.66rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--moss); margin-bottom: 0.7rem; display: inline-flex; align-items: center;
+  background: rgba(5,6,5,0.72); border: 1px solid rgba(63,174,110,0.45);
+  padding: 0.32rem 0.7rem; border-radius: 100px;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
 .pcard-body h3 { font-size: 1.2rem; color: #fff; margin-bottom: 0.4rem; letter-spacing: -0.02em; }
 .pcard-body p { font-size: 0.86rem; color: rgba(244,244,242,0.78); line-height: 1.5; max-height: 0; opacity: 0; overflow: hidden; transition: max-height 0.5s var(--ease), opacity 0.5s, margin 0.5s; }
 .pcard:hover .pcard-body p { max-height: 8rem; opacity: 1; margin-top: 0.3rem; }
