@@ -235,9 +235,10 @@ header.scrolled {
    HERO — full-bleed video, parallax, morphing glow
    ========================================================================== */
 .hero {
-  position: relative; height: 100svh; max-height: 100svh; display: flex; align-items: center;
-  overflow: hidden; padding: 7rem 0 3rem;
+  position: relative; height: 100svh; max-height: 100svh; display: flex; align-items: stretch;
+  overflow: hidden; padding: 8rem 0 5rem;
 }
+.hero > .container { display: flex; align-items: center; }
 .hero-media { position: absolute; inset: 0; z-index: 0; }
 .hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; will-change: transform; transform: scale(1.08); }
 /* Poster shows instantly; video fades in over it once it can play — no blank gap */
@@ -258,7 +259,11 @@ header.scrolled {
               radial-gradient(50vw 50vw at 10% 80%, var(--accent-glow), transparent 60%);
 }
 .hero .container { z-index: 2; }
-.hero-inner { max-width: 780px; }
+.hero-inner {
+  max-width: 780px; width: 100%;
+  display: flex; flex-direction: column; justify-content: space-between;
+  min-height: min(72vh, 640px);
+}
 
 /* Eyebrow pinned bottom-right of the hero, out of the content stack */
 .hero-badge {
@@ -270,8 +275,8 @@ header.scrolled {
   box-shadow: 0 4px 20px rgba(0,0,0,0.35);
 }
 .hero-badge::before { background: var(--moss); }
-.hero h1 { margin-bottom: 3.2rem; max-width: 15ch; }
-.hero .lead { margin-bottom: 3.8rem; color: rgba(244,244,242,0.92); max-width: 52ch; }
+.hero h1 { margin-bottom: 0; max-width: 15ch; }
+.hero .lead { margin-bottom: 0; color: rgba(244,244,242,0.92); max-width: 52ch; }
 .hero-lead {
   display: inline-block;
   background: rgba(5,6,5,0.42);
@@ -293,7 +298,7 @@ header.scrolled {
 /* Trust strip under hero */
 .trust-strip {
   display: flex; flex-wrap: wrap; gap: 1rem 2rem; align-items: center;
-  margin-top: 4rem; padding-top: 2.8rem; margin-left: 3.5rem; border-top: 1px solid rgba(255,255,255,0.14);
+  margin-top: 0; padding-top: 2.8rem; margin-left: 3.5rem; border-top: 1px solid rgba(255,255,255,0.14);
 }
 .trust-item { display: flex; align-items: center; gap: 0.6rem; font-size: 0.86rem; color: rgba(244,244,242,0.85); font-weight: 500; text-shadow: 0 1px 8px rgba(0,0,0,0.5); }
 .trust-item svg { width: 18px; height: 18px; color: var(--moss); flex: 0 0 auto; }
