@@ -41,3 +41,10 @@ CLAUDE.md
 # Oversized videos (>100MB, can't go in regular git)
 assets/projects/institute-project/video-drone.mp4
 assets/projects/tiered-retaining-wall/video-drone.mp4
+
+# Raw source videos (uncompressed) — only the compressed mp4s referenced by the site are committed
+assets/video/*.mov
+assets/video/story-alt.mp4
+assets/video/showcase.mp4
+assets/video/story.mp4
+REBUILD_CONTEXT.md

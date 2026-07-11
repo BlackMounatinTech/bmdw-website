@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Full-service excavation, concrete, retaining walls, driveways, patios, land clearing, tree removal, drainage, and water features on Vancouver Island.">
   <title>Services | Excavation, Concrete, Retaining Walls, Landscaping — Vancouver Island</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/premium.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
@@ -80,117 +82,137 @@
     ]
   }
   </script>
+  <script>document.documentElement.classList.remove('no-js');</script>
 </head>
-<body>
+<body class="interior">
 
   <!-- Header -->
   <header>
     <div class="container">
       <nav class="nav-wrapper">
-<button class="nav-toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a href="index.html" class="nav-brand" aria-label="Black Mountain Dirt Works — Home">
+          <img src="assets/logo-mountains-white.png" alt="">
+          <span class="nav-brand-text">Black <b>Mountain</b><small>Dirt Works</small></span>
+        </a>
         <div class="nav-links">
           <a href="index.html">Home</a>
           <a href="services.html" class="active">Services</a>
           <a href="projects.html">Projects</a>
-          <a href="testimonials.html">Testimonials</a>
+          <a href="testimonials.html">Reviews</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </div>
         <a href="tel:+12502542377" class="nav-phone">250-254-2377</a>
+        <button class="nav-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
       </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="services-hero">
+  <!-- Page Hero -->
+  <section class="page-hero">
     <div class="container">
-      <h1>What We Do</h1>
-      <p>From raw land to a finished landscape. Excavation, concrete, retaining walls, hardscaping, and everything in between. Click any service below to see exactly what's involved and the kind of work we do.</p>
+      <span class="eyebrow reveal">What We Do</span>
+      <h1 class="reveal">What We Do</h1>
+      <p class="lead reveal">From raw land to a finished landscape. Excavation, concrete, retaining walls, hardscaping, and everything in between. Click any service below to see exactly what's involved and the kind of work we do.</p>
     </div>
   </section>
 
   <!-- Intro Context -->
-  <section class="minimal-section" style="padding-top:2rem; padding-bottom:3rem;">
+  <section class="section" style="padding-bottom:1rem;">
     <div class="container">
-      <div style="max-width:760px; margin:0 auto;">
-        <span class="section-label">Built For the Outcome</span>
-        <h2>You picture it. We build it.</h2>
-        <p style="font-size:1.1rem; line-height:1.7; color:var(--slate); margin-bottom:1rem;">Most homeowners don't care about the technical details of what we do — they care about the end result. A backyard they can actually use, a driveway that holds up, a retaining wall that's built to last.</p>
-        <p style="font-size:1.1rem; line-height:1.7; color:var(--slate);">That's what we focus on. If you're not sure which service fits your project, give us a call and we can talk it through.</p>
+      <div class="prose">
+        <span class="eyebrow reveal">Built For the Outcome</span>
+        <h2 class="reveal">You picture it. We build it.</h2>
+        <p class="reveal">Most homeowners don't care about the technical details of what we do, they care about the end result. A backyard they can actually use, a driveway that holds up, a retaining wall that's built to last.</p>
+        <p class="reveal">That's what we focus on. If you're not sure which service fits your project, give us a call and we can talk it through.</p>
       </div>
     </div>
   </section>
 
   <!-- Services Hub -->
-  <section style="padding-top:2rem;">
+  <section class="section" style="padding-top:1.5rem;">
     <div class="container">
-      <div class="service-hub-grid">
+      <div class="hub-grid reveal-stagger">
 
-        <a href="service-excavation-site-prep.html" class="service-hub-card">
-          <div class="service-number">01</div>
-          <h2>Excavation & Site Preparation</h2>
+        <a href="service-excavation-site-prep.html" class="hub-card">
+          <span class="num">01</span>
+          <h2>Excavation &amp; Site Preparation</h2>
           <p>Site clearing, earthmoving, trenching, grading, and getting raw land build-ready.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-retaining-walls.html" class="service-hub-card">
-          <div class="service-number">02</div>
+        <a href="service-retaining-walls.html" class="hub-card">
+          <span class="num">02</span>
           <h2>Retaining Walls</h2>
           <p>Block walls, natural boulder walls, and engineered retaining systems built to last.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-concrete.html" class="service-hub-card">
-          <div class="service-number">03</div>
+        <a href="service-concrete.html" class="hub-card">
+          <span class="num">03</span>
           <h2>Concrete Work</h2>
           <p>Foundations, footings, flatwork, slabs, curbs, and exposed aggregate.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-driveways.html" class="service-hub-card">
-          <div class="service-number">04</div>
+        <a href="service-driveways.html" class="hub-card">
+          <span class="num">04</span>
           <h2>Driveways</h2>
           <p>Gravel, concrete, and asphalt driveways. New installs, extensions, and replacements.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-patios-hardscaping.html" class="service-hub-card">
-          <div class="service-number">05</div>
-          <h2>Patios & Hardscaping</h2>
+        <a href="service-patios-hardscaping.html" class="hub-card">
+          <span class="num">05</span>
+          <h2>Patios &amp; Hardscaping</h2>
           <p>Natural stone, pavers, walkways, and custom outdoor living spaces.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-land-clearing.html" class="service-hub-card">
-          <div class="service-number">06</div>
-          <h2>Land Clearing & Roads</h2>
+        <a href="service-land-clearing.html" class="hub-card">
+          <span class="num">06</span>
+          <h2>Land Clearing &amp; Roads</h2>
           <p>Clearing trees, brush, stumps. Access roads built from scratch.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-tree-removal.html" class="service-hub-card">
-          <div class="service-number">07</div>
+        <a href="service-tree-removal.html" class="hub-card">
+          <span class="num">07</span>
           <h2>Tree Removal</h2>
           <p>Safe removal of trees, stumps, and root systems. Clean site when we're done.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-perimeter-drains.html" class="service-hub-card">
-          <div class="service-number">08</div>
+        <a href="service-perimeter-drains.html" class="hub-card">
+          <span class="num">08</span>
           <h2>Perimeter Drains</h2>
           <p>French drains, perimeter drainage, and foundation waterproofing.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
-        <a href="service-water-features.html" class="service-hub-card">
-          <div class="service-number">09</div>
-          <h2>Ponds & Water Features</h2>
+        <a href="service-water-features.html" class="hub-card">
+          <span class="num">09</span>
+          <h2>Ponds &amp; Water Features</h2>
           <p>Custom ponds, waterfalls, and water features. Built to look natural.</p>
-          <span class="service-link">Learn More &rarr;</span>
+          <span class="link">Learn More
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px;"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </span>
         </a>
 
       </div>
@@ -198,56 +220,78 @@
   </section>
 
   <!-- See It in Action -->
-  <section class="minimal-section bg-off text-center">
+  <section class="section" style="text-align:center;">
     <div class="container">
-      <span class="section-label">See It In Action</span>
-      <h2>Take a look at the work.</h2>
-      <p class="section-intro">Our project gallery has photos from start to finish on each job. It's probably the easiest way to get a sense of the kind of work we do.</p>
-      <a href="projects.html" class="btn btn-primary">View Our Projects</a>
-    </div>
-  </section>
-
-  <!-- Who We Work With -->
-  <section class="story-section">
-    <div class="container">
-      <div class="story-content" style="text-align:center;">
-        <span class="section-label">Who We Work With</span>
-        <h2>Homeowners and Property Owners</h2>
-        <p style="font-size:1.05rem; line-height:1.7; margin-bottom:1rem;">Most of our work is residential — homeowners who want their property done right. New driveways, retaining walls, backyard transformations, drainage problems, hardscaping, landscaping. If it involves dirt, concrete, or stone, we handle it.</p>
-        <p style="font-size:1.05rem; line-height:1.7;">We also work with property owners, small businesses, and acreage owners who need bigger jobs done — land clearing, road building, drainage systems, and major site work.</p>
+      <div class="prose">
+        <span class="eyebrow center reveal">See It In Action</span>
+        <h2 class="reveal">Take a look at the work.</h2>
+        <p class="reveal">Our project gallery has photos from start to finish on each job. It's probably the easiest way to get a sense of the kind of work we do.</p>
+        <p class="reveal"><a href="projects.html" class="btn btn-primary">View Our Projects
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a></p>
       </div>
     </div>
   </section>
 
-  <!-- Urgency CTA -->
-  <section class="urgency-banner">
+  <!-- Who We Work With -->
+  <section class="section" style="text-align:center;">
     <div class="container">
-      <h2>Our schedule fills up in spring.</h2>
-      <p>If you're thinking about a project for this season, it usually helps to reach out earlier rather than later. Gives us more time to figure things out on our end.</p>
-      <a href="contact.html" class="btn btn-white">Get on the Schedule</a>
+      <div class="prose">
+        <span class="eyebrow center reveal">Who We Work With</span>
+        <h2 class="reveal">Homeowners and Property Owners</h2>
+        <p class="reveal">Most of our work is residential, homeowners who want their property done right. New driveways, retaining walls, backyard transformations, drainage problems, hardscaping, landscaping. If it involves dirt, concrete, or stone, we handle it.</p>
+        <p class="reveal">We also work with property owners, small businesses, and acreage owners who need bigger jobs done, land clearing, road building, drainage systems, and major site work.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="section cta-banner">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="eyebrow center" style="color:#fff;">Let's Build</span>
+        <h2>Our schedule fills up in spring.</h2>
+        <p>If you're thinking about a project for this season, it usually helps to reach out earlier rather than later. Gives us more time to figure things out on our end.</p>
+        <a href="contact.html" class="btn btn-primary btn-lg">Get on the Schedule
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <div class="footer-inner">
-        <img src="assets/Photoroom_20250921_000748.png" alt="Black Mountain Dirt Works" class="footer-logo">
-        <div class="footer-links">
-          <a href="index.html">Home</a>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo-mountains-white.png" alt="Black Mountain Dirt Works">
+          <p>Excavation and landscape construction across Vancouver Island. Owner-operated, licensed, and insured.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
           <a href="services.html">Services</a>
           <a href="projects.html">Projects</a>
-          <a href="testimonials.html">Testimonials</a>
-          <a href="vancouver-island.html">Vancouver Island</a>
-          <a href="faq.html">FAQ</a>
+          <a href="testimonials.html">Reviews</a>
           <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
+          <a href="faq.html">FAQ</a>
         </div>
-        <p class="footer-copy">&copy; 2026 Black Mountain Dirt Works. British Columbia, Canada.</p>
+        <div class="footer-col">
+          <h4>Get In Touch</h4>
+          <a href="tel:+12502542377" style="font-family:var(--font-mono);color:var(--moss);">250-254-2377</a>
+          <a href="mailto:Blackmountaindirtworks@gmail.com">Blackmountaindirtworks@gmail.com</a>
+          <a href="contact.html">Request a Quote</a>
+          <a href="vancouver-island.html">Vancouver Island</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Black Mountain Dirt Works. British Columbia, Canada.</p>
+        <p><a href="privacy.html" style="color:var(--fg-dim);">Privacy</a></p>
       </div>
     </div>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/premium.js"></script>
 </body>
 </html>
