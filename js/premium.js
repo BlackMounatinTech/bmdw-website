@@ -10,15 +10,17 @@
   var toggle = document.querySelector('.nav-toggle');
   var navLinks = document.querySelector('.nav-links');
   if (toggle && navLinks) {
+    var setMenu = function (open) {
+      toggle.classList.toggle('active', open);
+      navLinks.classList.toggle('active', open);
+      // Hide the rest of the page while the menu is open so nothing shows behind it
+      document.body.classList.toggle('menu-open', open);
+    };
     toggle.addEventListener('click', function () {
-      toggle.classList.toggle('active');
-      navLinks.classList.toggle('active');
+      setMenu(!navLinks.classList.contains('active'));
     });
     navLinks.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', function () {
-        toggle.classList.remove('active');
-        navLinks.classList.remove('active');
-      });
+      link.addEventListener('click', function () { setMenu(false); });
     });
   }
 
