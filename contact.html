@@ -152,6 +152,11 @@
         <div class="contact-form-wrap slide-r">
           <h3 class="reveal">Request a Quote</h3>
           <form id="contact-form" action="https://formspree.io/f/xzdybllg" method="POST">
+            <!-- Formspree checks this field on its server. Leave it empty. -->
+            <div hidden aria-hidden="true">
+              <label for="website-check">Leave this field empty</label>
+              <input type="text" id="website-check" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
 
             <div class="form-row reveal">
               <label for="name">Name</label>
@@ -166,6 +171,11 @@
             <div class="form-row reveal">
               <label for="email">Email</label>
               <input type="email" id="email" name="email" required placeholder="Your email">
+            </div>
+
+            <div class="form-row reveal">
+              <label for="project-location">Project Location</label>
+              <input type="text" id="project-location" name="project_location" required maxlength="160" placeholder="Town or city on Vancouver Island">
             </div>
 
             <div class="form-row reveal">
@@ -187,7 +197,7 @@
 
             <div class="form-row reveal">
               <label for="description">Project Description</label>
-              <textarea id="description" name="description" placeholder="Tell us about your project. Location, scope, timeline, anything that helps us understand the job."></textarea>
+              <textarea id="description" name="description" required minlength="20" maxlength="5000" placeholder="Tell us about your project. Location, scope, timeline, anything that helps us understand the job."></textarea>
             </div>
 
             <div class="form-row reveal">
@@ -236,6 +246,7 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/form-protection.js?v=20261106"></script>
   <script src="js/premium.js"></script>
 </body>
 </html>
