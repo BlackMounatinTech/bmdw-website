@@ -83,7 +83,8 @@
 
   /* ---------------- Contact form (Formspree) ---------------- */
   var form = document.getElementById('contact-form');
-  if (form) {
+  // Native submission lets Formspree display its server-verified CAPTCHA.
+  if (form && form.dataset.submissionMode !== 'native') {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       var btn = form.querySelector('button[type="submit"]');
